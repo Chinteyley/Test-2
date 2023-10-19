@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<style>
+    table,th,td {
+        border: 1px solid black;
+    }
+    .hidden {
+        display: none;
+    }
+    #JobConfirmation{
+        background: #f9b2a9;
+        padding: 10px;
+    }
+</style>
+<head>
+    <title>Job's Application form</title>
+</head>
+<body style="background: #FAFAEB">
+<h1>Application form for CTEY's School</h1>
+      <form style="padding: 10px">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name">
+          <label for="age">Your Age: </label>
+          <input type="number" id="age" name="age">
+          <label for="address" >Your Address: </label>
+          <textarea id="address" name="address"cols="50"></textarea>
+          <label for="ph">Your Phone number: </label>
+          <input type="number" id="ph" name="address">
+          <p>What is your gender?</p>
+          <select id="gender" name="gender" style="margin-bottom: 10px">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+          </select><br>
+          <label for="sub">What did you do before? </label><br>
+          <input type="text" id="sub" name="sub"><br>
+          <label for="exp">how many years of experience? </label><br>
+          <input type="number" id="exp" name="exp"><br>
+          <label for="edu">What is your level of Education? </label><br>
+          <input type="text" id="edu" name="edu"><br>
+          <label for="jobs"><b>What are you applying for?</b></label>
+          <select id="jobs" name="jobs">
+              <option value="Computer Network">Computer Network</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Java Programming">Java Programming</option>
+              <option value="Full Stack Development">Full Stack Development</option>
+              <option value="Python Programming">Python Programming</option>
+          </select><br>
+          <label for="interview"><b>When are you available for an interview?</b></label>
+          <input type="date" id="interview" name="interview">
+          <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+
+<div id="JobConfirmation" class="hidden" >
+    <h2 style="text-align: center;">Jobs Confirmation</h2>
+    <p><strong>Name:</strong> <span id="confirmationName"></span></p>
+    <p><strong>Age:</strong> <span id="confirmationAge"></span></p>
+    <p><strong>Gender:</strong> <span id="confirmationGender"></span></p>
+    <p><strong>Address:</strong> <span id="confirmationAddress"></span></p>
+    <p><strong>Phone number:</strong> <span id="confirmationPhonenumber"></span></p>
+    <p><strong>Past Experience:</strong> <span id="confirmationsub"></span></p>
+    <p><strong>Years of Experience:</strong> <span id="confirmationexp"></span></p>
+    <p><strong>Level of Experience:</strong> <span id="confirmationedu"></span></p>
+    <p><strong>Applying for:</strong> <span id="confirmationjobs"></span></p>
+    <p><strong>Interview on:</strong> <span id="confirmationinterview"></span></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

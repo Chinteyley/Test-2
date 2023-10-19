@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIT</title>
+</head>
+<style>
+    body{
+        background: red;
+        color: white
+    }
+    @media (max-width: 1250px){
+        body{
+            background: white;
+            color: black;
+        }
+    }
+
+    #KIT{
+        padding: 10px;
+        animation-name: test;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes test {
+        from {color: red}
+        to {box-shadow: white}
+    }
+
+    .inline-block-container {
+        display: inline-block;
+        width: 30%;
+        margin: 20px;
+        vertical-align: top;
+    }
+    .inline-block{
+        display: inline-block;
+        background: white;
+        width: 100%;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+</style>
+<body>
+<h1 id="KIT">KIT</h1>
+<div class="inline-block-container">
+  <h1>This is an Inline Block</h1>
+  <div class="inline-block">HEY</div>
+  <div class="inline-block">I'm</div>
+  <div class="inline-block">An Inline Block</div>
+</div>
+</body>
+</html>
